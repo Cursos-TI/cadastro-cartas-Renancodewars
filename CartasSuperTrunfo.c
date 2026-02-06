@@ -8,6 +8,7 @@ int main() {
     char cidade[50], cidade2[50]; 
     int populacao, pontosTuristicos, populacao2, pontosTuristicos2;
     float area, pib, area2, pib2;
+    float densidade, densidade2, pibpercapita, pibpercapita2;
     
     //--------------------------------------------------
     
@@ -37,6 +38,7 @@ int main() {
     scanf("%d", &pontosTuristicos);
     // carta 01 finalizada
     
+    
    // ---------------------------------------------------------
     
     // Cadastro da Carta 2
@@ -64,11 +66,27 @@ int main() {
     printf("pontos turisticos: ");
     scanf("%d", &pontosTuristicos2);
 
-    printf("\nCarta 1:\nEstado: %c, Código: %s, Cidade: %s, População: %d, Área: %.2f km², PIB: %.2f bilhões, Pontos: %d\n", 
+    printf("\nCarta 1:\nEstado: %c \nCódigo: %s \nCidade: %s \nPopulação: %d \nÁrea: %.2f km² \nPIB: %.2f bilhões \nPontos turisticos: %d\n", 
            estado, codigo, cidade, populacao, area, pib, pontosTuristicos);
            
-    printf("\nCarta 1:\nEstado: %c, Código: %s, Cidade: %s, População: %d, Área: %.2f km², PIB: %.f bilhões, Pontos: %d\n", 
+    printf("\nCarta 2:\nEstado: %c \nCódigo: %s \nCidade: %s \nPopulação: %d \nÁrea: %.2f km² \nPIB: %.f \nbilhões \nPontos turisticos: %d\n",
            estado2, codigo2, cidade2, populacao2, area2, pib2, pontosTuristicos2);       
     
-     return 0;
+    
+    //desafio nivel intermediario - aventureiro = carta 01
+    printf("calculos de desidade e pib carta 1\n");
+    densidade = (float) (populacao / area);
+    pibpercapita = (float) (pib / populacao);
+    printf("densidade populacional: %.2f \npib per capita: %.2f\n", densidade, pibpercapita);
+    
+    //desafio nivel intermediario - aventureiro = carta 02
+    printf("calculos de desidade e pib carta 2\n");
+    densidade2 = (float) (populacao2 / area2);
+    pibpercapita2 = (float) (pib2 / populacao2);
+    printf("densidade populacional: %.2f\n", densidade2);
+    printf("pib per capita: %.2f\n", pibpercapita2);
+    //usei dois modelos de exibição pois fiz o priemiro depois percebi que poderia usar outro tambem então deixei os dois para ilustra que podemos fazer a mesma linha de codigo de diversas formas diferente
+    
+
+    return 0;
 }
