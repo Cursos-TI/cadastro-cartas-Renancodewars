@@ -136,18 +136,6 @@ r = soma > soma2;
 printf("Super Poder: Carta %d venceu (%d)\n", r?1:2, r);
     
 // a parte 3 do desafio foi utilizado IA porém nao de uma forma a burla, mas sim de utilizar ferramentas de tecnologia para agilização e codificação do codigo de forma eficiente, pratica e rapida conceitos fundamentais na programação projeto fase 1 e 2 feitos a mão sem ajuda nenhuma da IA, feito somente vendo as aulas e explicações do professor
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
     return 0;
 }
